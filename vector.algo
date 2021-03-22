@@ -1,0 +1,35 @@
+PROCEDURE dot_product(tab1 , tab2)
+VAR
+sum:INTEGER=0;
+ i:INTEGER=0;
+BEGIN
+    FOR i FROM 0 TO tab1.length STEP step1  DO
+        
+        sum+=tab1[i]*tab2[i];
+
+    END_FOR
+END
+
+
+ALGORITHM algorithm_name
+VAR
+ tab1 : ARRAY_OF INTEGER[2];
+ tab2 : ARRAY_OF INTEGER[2];
+BEGIN
+  if (dot_product(tab1,tab2)===0)
+  {
+      write "dot 1 et dot 2 are  orthogonal"
+  }
+END
+
+ALGORITHM algorithm_name
+VAR
+ tab1 : ARRAY_OF INTEGER[2];
+ tab2 : ARRAY_OF INTEGER[2];
+BEGIN
+  if (dot_product(var tab1,tab2)===0)
+  {
+      write "dot 1 et dot 2 are  orthogonal"
+  }
+END
+
